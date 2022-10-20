@@ -1,3 +1,52 @@
+:root {
+    --red: #ed6e58
+}
+
+* {
+    box-sizing: border-box;
+}
+
 img {
     width: 200px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    padding: 15px;
+}
+
+main {
+    
+    background-color: antiquewhite;
+    padding: 5px 10px 5px 10px;
+}
+
+header {
+    background-color: var(--red);
+    padding: 15px 15px 30px 15px;
+    border: 1px solid black;
+    
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    background-color: #e64427;
+    padding: 4px;
+    border-radius: 5px;
+    border: 2px solid black;
+    
+}
+
+header a:hover {
+    background-color: #e8b9b0;
+    border: 2px solid white;
+}
+
+figure {
+    padding: 10px;
+    background-color: whitesmoke;
+    display: inline-block;
+
 }
