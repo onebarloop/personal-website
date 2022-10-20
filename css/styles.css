@@ -17,16 +17,15 @@ body {
 }
 
 main {
-    
+   
     background-color: antiquewhite;
     padding: 5px 10px 5px 10px;
 }
 
 header {
     background-color: var(--red);
-    padding: 15px 15px 30px 15px;
-    border: 1px solid black;
-    
+    padding: 15px 15px 20px 15px;
+        
 }
 
 header a {
