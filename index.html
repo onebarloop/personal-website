@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1>Herzlich Willkommen!</h1>
         <nav>Navigation:
             <a href=#logo>Zum Logo</a>
@@ -33,24 +33,28 @@
             <figcaption><b>Elektron</b></figcaption>
         </figure>
         <h3 id="inputs">Inputs! No backend though...</h3>
-        <form action="">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name">
-            </div>
-            <div>
-                <label for="age">Alter:</label>
-                <input type="date" id="age">
-            </div>
-            <div>OS:
-                <label for="macos">MacOS</label>
-                <input type="radio" id="os" name="os">
-                <label for="linux">GNU/Linux</label>
-                <input type="radio" id="linux" name="os">
-                <label for="windows">Windows</label>
-                <input type="radio" id="windows" name="os">
-            </div>
-        </form>
+		<fieldset>
+			<legend>Information about you</legend>
+			<form action="">
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" id="name">
+				</div>
+				<div>
+					<label for="age">Alter:</label>
+					<input type="date" id="age">
+				</div>
+				<div>
+					<label>OS:</label>
+					<label class="radio" for="macos">MacOS</label>
+					<input type="radio" id="os" name="os">
+					<label class="radio" for="linux">GNU/Linux</label>
+					<input type="radio" id="linux" name="os">
+					<label class="radio" for="windows">Windows</label>
+					<input type="radio" id="windows" name="os">
+				</div>
+			</form>
+		</fieldset>
             
         <h3 id="lists">Zwei Listen:</h3>
         <ol>
@@ -93,6 +97,10 @@
             <li><a href="https://github.com/onebarloop">my personal github</a></li>
             <li><a href="https://google.de">google.de</a></li>
         </ul>
+		<div class="up">
+			<a href="#top">zurück nach oben</a>
+		</div>
+		
         
     </footer>
 </body>

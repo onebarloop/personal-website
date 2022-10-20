@@ -10,6 +10,10 @@ img {
     width: 200px;
 }
 
+figure {
+    margin-left: auto;
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
@@ -48,4 +52,50 @@ figure {
     background-color: whitesmoke;
     display: inline-block;
 
+}
+
+label {
+    
+    display: inline-block;
+    width: 100px;
+   
+}
+
+.radio {
+    
+    display: inline;
+    
+}
+
+form div {
+    margin: 5px;
+}
+
+
+
+footer, 
+footer a {
+    color: white;
+}
+
+a[href="#top"] {
+    color: black;
+    background-color: var(--red);
+    text-decoration: none;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 1.25em;
+    border-radius: 2px;
+    
+}
+
+a[href="#top"]:hover {
+    border-radius: 4px;
+    box-shadow: 10px 5px 5px red;
+    padding: 5px;
+    
+}‚
+
+.up {
+    margin-top: 35px;
 }
