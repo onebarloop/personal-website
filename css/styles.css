@@ -20,25 +20,25 @@ body {
 }
 
 nav {
+    
+    
     display: flex;
-    gap: 20px;
-    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: -80px;
+    
 }
- nav b {
-    align-self: center;
-    margin-top: 20px;
- }
+
 
 nav a {
     width: 100px;
     height: 50px;
+    text-align: center;    
 }
 
-nav img {
-    align-self: flex-start;
+nav img {   
     width: 150px;
-    margin-bottom: 20px;
-    
+    position: relative;
+    bottom: 80px;       
 }
 
 img {
