@@ -11,12 +11,34 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     background-size: auto auto;
-background-color: rgba(40, 33, 33, 1);
-background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 1) 20px );
+    background-color: rgba(40, 33, 33, 1);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 1) 20px );
     padding: 15px;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+ nav b {
+    align-self: center;
+    margin-top: 20px;
+ }
+
+nav a {
+    width: 100px;
+    height: 50px;
+}
+
+nav img {
+    align-self: flex-start;
+    width: 150px;
+    margin-bottom: 20px;
+    
 }
 
 img {
