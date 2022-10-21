@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 img {
     width: 200px;
 }
@@ -43,8 +44,7 @@ main {
 
 header {
     background-color: var(--red);
-    padding: 15px 15px 20px 15px;
-        
+    padding: 15px 15px 20px 15px;        
 }
 
 header a {
@@ -69,11 +69,19 @@ figure {
 
 }
 
+legend {
+    font-weight: bold;
+}
+
 label {
     
     display: inline-block;
     width: 100px;
    
+}
+
+input::placeholder {
+    font-size: 0.5em;
 }
 
 .radio {
