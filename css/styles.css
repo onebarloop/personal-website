@@ -4,7 +4,6 @@
 
 * {
     box-sizing: border-box;
-    width: 800px;
    
 }
 
@@ -13,7 +12,7 @@ img {
     width: 200px;
 }
 
-p {
+section {
     margin-bottom: 40px;
     width: 500px;
 }
@@ -46,7 +45,7 @@ body {
 main {
    
     background-color: antiquewhite;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 30px 30px;
 }
 
 header {
@@ -77,8 +76,7 @@ figure {
 }
 
 fieldset {
-    width: 10px;
-    display: inline-block; 
+    width: 500px;
 }
 
 legend {
