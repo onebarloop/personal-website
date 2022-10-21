@@ -12,6 +12,11 @@ img {
 
 figure {
     margin-left: auto;
+    color: black;
+}
+
+figure:hover {
+    background-color: var(--red);
 }
 
 body {
@@ -71,7 +76,23 @@ form div {
     margin: 5px;
 }
 
+table {
+    font-size: 3em;
+}
 
+table, th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+td {
+    padding: 10px;
+}
+
+td:hover {
+    background-color: var(--red);
+    cursor: crosshair;
+}
 
 footer, 
 footer a {
