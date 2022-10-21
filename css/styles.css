@@ -10,6 +10,16 @@ img {
     width: 200px;
 }
 
+p {
+    margin-bottom: 40px;
+}
+
+p::selection {
+    color: red;
+    background-color: yellow;
+}
+
+
 figure {
     margin-left: auto;
     color: black;
@@ -92,6 +102,11 @@ td {
 td:hover {
     background-color: var(--red);
     cursor: crosshair;
+}
+
+td:active{
+    color: red;
+    background-color: yellow;
 }
 
 footer, 
