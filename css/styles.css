@@ -33,6 +33,8 @@ nav a {
     width: 100px;
     height: 50px;
     text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
 }
 
 nav img {   
@@ -61,16 +63,40 @@ section {
     align-items: flex-end;
     justify-content: space-between;
     background-color: #e8b9b0;
-    padding: 5px;
-    
+    padding: 10px;
+    font-weight: bold;
     
 }
 
 .absatz--side div {
     background-color: #e64427;
-    width: 20px;
+    width: 80px;
     height: 20px;
+    
 }
+
+.absatz--side div::before {
+    content: '\1F423';
+    position: relative;
+    right: 30px;   
+}
+
+.absatz--side div:hover {
+    background-color: black;
+    width: 80px;
+    height: 20px;
+    
+}
+
+.absatz--side div:hover::before {
+    content: '\1F427';
+    position: relative;
+    right: 30px;   
+}
+
+
+
+
 
 p::selection {
     color: red;
@@ -168,7 +194,17 @@ form div {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
+    
 }
+
+.lists:hover {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+
+
 
 footer li::marker {
     content: '\1F601'  " ";
