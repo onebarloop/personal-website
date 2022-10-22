@@ -144,8 +144,19 @@ form div {
     margin: 5px;
 }
 
+.lists {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+footer li::marker {
+    content: '\1F601'  " ";
+    
+}
+
 .tables {
-    display:flex;
+    display: flex;
     justify-content: space-around
 }
 
@@ -193,7 +204,7 @@ a[href="#top"]:hover {
     box-shadow: 10px 5px 5px red;
     padding: 5px;
     
-}‚
+}
 
 .up {
     margin-top: 35px;
