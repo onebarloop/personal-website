@@ -47,10 +47,30 @@ img {
 
 section {
     margin-bottom: 40px;
-    width: 500px;
+    
 }
 
+.absatz {
+    display: flex;
+    gap: 20px;
+}
 
+.absatz--side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #e8b9b0;
+    padding: 5px;
+    
+    
+}
+
+.absatz--side div {
+    background-color: #e64427;
+    width: 20px;
+    height: 20px;
+}
 
 p::selection {
     color: red;
@@ -72,7 +92,7 @@ figure:hover {
 main {
    
     background-color: antiquewhite;
-    padding: 5px 10px 30px 30px;
+    padding: 5px 30px 30px 30px;
 }
 
 header {
