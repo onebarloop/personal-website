@@ -4,70 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Work in porgress</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Herzlich Willkommen!</h1>
-        <nav>Navigation:
-            <button><a href=#logo>Zum Logo</a></button> 
-            <button><a href="#inputs">Inputs</a></button> 
-            <button><a href="#lists">Listen</a></button>
-            <button><a href="#tabelle">Tabelle</a></button>
-        </nav>
-        <hr>
+    <header id="top">
+        <h1>Willkommen auf der Baustelle</h1>
+        <nav>
+            <a href=#logo>Mitte</a>
+            <a href="#inputs">Inputs</a>
+            <a href="#lists">Listen</a>
+            <a href="#tabelle">Tabelle</a>
+            <img src="../assets/gears.png" alt="header-logo">
+        </nav>       
     </header>
+    <hr>
     <main>
-        <h2>Welcome again @ "Main"</h2>
-        <h3>Wir starten mit einem Ankertag:</h3>
-        <a href="#">Ein Link ins Nichts</a>
+        <h2>Spaß mit CSS!</h2>
         <section>
-            <h3>Nun ein Absatz:</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
-        </section>
-        <h3 id="logo">Ein Logo:</h3>
-        <figure>
-            <img src="./assets/logo.jpg" alt="Elektron Logo">
-            <figcaption><b>Elektron</b></figcaption>
-        </figure>
-        <h3 id="inputs">Funktionslose Inputs ... :(</h3>
-        <input type="text" name="" id="">
-        <input type="checkbox" name="" id=""> 
-        <input type="text" name="" id="">
-        <input type="checkbox" name="" id="">
+            <h3>Ein Absatz. Versuch mal, den Text zu markieren!</h3> 
+            <div class="absatz">
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>   
+                
+                <div class="absatz--side">Sidecontent:
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            </section>
+        <h3 id="logo">Die Mitte der Seite:</h3>
+        <div class="center-box">
+            <a href="https://elektron.se">
+                <figure>
+                    <img src="./assets/logo.jpg" alt="Elektron Logo">
+                    <figcaption><b>Elektron</b></figcaption>
+                </figure>
+            </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <h3 id="inputs">Inputs! No backend though...</h3>
+		<fieldset>
+			<legend>***Some Information about you***</legend>
+			<form action="">
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" id="name" placeholder="Ich bin ein sehr kleiner Platzhalter">
+				</div>
+				<div>
+					<label for="age">Alter:</label>
+					<input type="date" id="age">
+				</div>
+				<div>
+					<label>OS:</label>
+					<label class="radio" for="macos">MacOS</label>
+					<input type="radio" id="os" name="os">
+					<label class="radio" for="linux">GNU/Linux</label>
+					<input type="radio" id="linux" name="os">
+					<label class="radio" for="windows">Windows</label>
+					<input type="radio" id="windows" name="os">
+				</div>
+			</form>
+		</fieldset>
             
         <h3 id="lists">Zwei Listen:</h3>
+        <div class="lists">  
         <ol>
-            <li>Nummer 1</li>
-            <li>Nummer 2</li>
-            <li>Nummer 3</li>
-        </ol>
+                <li>Nummer 1</li>
+                <li>Nummer 2</li>
+                <li>Nummer 3</li>
+            </ol>
 
-        <ul>
-            <li>Punkt 1</li>
-            <li><b>Punkt 2 (wichtig!)</b></li>
-            <li>Punkt 3</li>
-        </ul>
-
-        <h3 id="tabelle">Eine Tabelle:</h3>
-        <table>
-            <tr>
-                <td>X</td>
-                <td>O</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>O</td>
-                <td>X</td>
-                <td>O</td>
-            </tr>
-            <tr>
-                <td>X</td>
-                <td>O</td>
-                <td>X</td>
-            </tr>
-        </table>
+            <ul>
+                <li>Punkt 1</li>
+                <li>Punkt 2</li>
+                <li>Punkt 3</li>
+            </ul>
+        </div>  
+        <h3 id="tabelle">Tabellen - klickbar!</h3>
+        <div class="tables">
+            <table>
+                <tr>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>O</td>
+                    <td>X</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>X</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>O</td>
+                    <td>X</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>X</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>O</td>
+                    <td>X</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>X</td>
+                </tr>
+            </table>
+    </div>
      
     </main>
     <hr>
@@ -78,6 +147,10 @@
             <li><a href="https://github.com/onebarloop">my personal github</a></li>
             <li><a href="https://google.de">google.de</a></li>
         </ul>
+		<div class="up">
+			<a href="#top">zurück nach oben</a>
+		</div>
+		
         
     </footer>
 </body>
